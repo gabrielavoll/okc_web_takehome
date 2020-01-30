@@ -1,0 +1,21 @@
+body {
+	background: #f4f4f4;
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+button {
+  color: red;
+}
