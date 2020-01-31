@@ -1,33 +1,50 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { VIEWS } from '../constants.js';
 import { connect } from "react-redux";
-import { increment } from "../madlibs";
-
+import Questionnaire from './Questionnaire.js';
+import Edit from './Edit.js';
 require("./App.scss");
 
 class App extends Component {
-  static propTypes = {
-    dispatch: PropTypes.func.isRequired,
-    counter: PropTypes.number.isRequired,
+   static propTypes = {
+     view: PropTypes.string.isRequired
   };
 
-  render() {
-    return (
-      <div className="matchArea">
-        <p>Counter (to make sure redux works): {this.props.counter}</p>
+  componentDidMount(){
+    // Added in handling for ENTER key to mirror TAB default click handling
+    document.addEventListener('keydown', function (event) {
+      if (event.keyCode === 13 && event.target.nodeName === 'INPUT') {
+        event.preventDefault();
+        var form = event.target.form,
+            next_index = Array.prototype.indexOf.call(form, event.target) + 1;
+        var submitbutton = document.getElementsByTagName('button')[0];
+        if(next_index >= form.elements.length)
+          if(submitbutton) {
+            submitbutton.focus();
+            return;
+          } else
+            next_index = 0;
+        form.elements[next_index].focus();
+      }
+    });
+  }
 
-        <p>
-          <button onClick={() => this.props.dispatch(increment())}>
-            Increment
-          </button>
-        </p>
-      </div>
-    );
+  render() {
+    switch (this.props.view) {
+      case VIEWS.EDIT:
+        return (<Edit />)
+        break;
+      case VIEWS.QUESTIONNAIRE:
+      default: 
+        return (<Questionnaire />)
+        break;
+    }
   }
 }
 
 function mapStateToProps(state) {
-  return state;
+  return { view: state.view }
 }
 
 export default connect(mapStateToProps)(App);

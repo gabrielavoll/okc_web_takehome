@@ -1,5 +1,11 @@
 import { FIELD_NAMES } from "./constants";
 
+export function getRandomTemplateIndex(fieldName){
+  return Math.floor( 
+    Math.random() * getTextTemplates(fieldName).length
+  )
+}
+
 export function getTextTemplates(fieldName) {
   switch (fieldName) {
     case FIELD_NAMES.hometown: {

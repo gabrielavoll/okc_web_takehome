@@ -24,3 +24,8 @@ export const FIELDS = {
   [FIELD_NAMES.music]: COPY[FIELD_NAMES.music],
   [FIELD_NAMES.bar]: COPY[FIELD_NAMES.bar],
 };
+
+export const VIEWS = {
+  QUESTIONNAIRE: "QUESTIONNAIRE",
+  EDIT: "EDIT"
+};
