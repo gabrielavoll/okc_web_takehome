@@ -23,7 +23,7 @@ class Question extends Component {
   }
 
   handleBlur(){
-    if(this.state.input && this.state.input.length > 0 && this.state.input != this.props.savedInput )
+    if(this.state.input && this.state.input.length > 0 && this.state.input !== this.props.savedInput )
       this.props.dispatch(
         submitField(this.props.field, this.state.input)
       );
