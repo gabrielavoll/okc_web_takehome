@@ -1,12 +1,12 @@
-## Notes from Gabriela Voll
+#### Note from Gabriela Voll
 
-Following the instructions under `How to use` will get this thing up and running LOCALLY, without any errors or warnings.
+React.js | Redux.js Mad-Lib Web App ============> http://gato333.github.io/okc_web_takehome/
 
-I didnt add any additional modules to get this web app going, since the requirements were very simple, EXCEPT `gh-pages` module just so I could get this web app hosted on Github Pages, it wasnt necessary and the app works fine locally without it installed BUT since this is the first time I've heard of Github Pages being able to support more complex build deployment I had to give it a go.
+The final product exists at the above link AND it can be run LOCALLY by pulling down the git repository and following the instructions under `How to use` without any updates to the original build, and without any errors or warnings.
 
-Without further to do a very simple implementation for React.js | Redux.js 
+I didnt add any additional modules to get this web app going, since the requirements were very simple, EXCEPT `gh-pages` module just so I could get this web app hosted on Github Pages, it wasnt necessary and the app works fine locally without it installed BUT since this is the first time I've heard of Github Pages being able to support more complex build deployment I had to give it a go. 
 
-========> http://gato333.github.io/okc_web_takehome/ <==========
+It wasnt asked for, but I implemented some test for the larger/more complex components and on madlibs.js (for the actions and reducer) 
 
 # OkCupid Take-Home Exercise
 
