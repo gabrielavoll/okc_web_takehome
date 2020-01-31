@@ -1,7 +1,12 @@
 ## Notes from Gabriela Voll
 
-Following the instructions under `How to use` will get this thing up and running without any errors or warnings. 
-I didnt add any additional modules to get this going, since the requirements were very simple. But without further to do a very simple implementation for React.js|Redux.js 
+Following the instructions under `How to use` will get this thing up and running LOCALLY, without any errors or warnings.
+
+I didnt add any additional modules to get this web app going, since the requirements were very simple, EXCEPT `gh-pages` module just so I could get this web app hosted on Github Pages, it wasnt necessary and the app works fine locally without it installed BUT since this is the first time I've heard of Github Pages being able to support more complex build deployment I had to give it a go.
+
+Without further to do a very simple implementation for React.js | Redux.js 
+
+========> http://gato333.github.io/okc_web_takehome/ <==========
 
 # OkCupid Take-Home Exercise
 
