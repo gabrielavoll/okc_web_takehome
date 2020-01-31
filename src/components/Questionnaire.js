@@ -25,6 +25,8 @@ class Questionnaire extends Component {
                 <Question
                   key={field}
                   field={field}
+                  savedInput={ this.props.fieldAnswers.hasOwnProperty(field) ? 
+                    this.props.fieldAnswers[field].userInput : ''}
                   question={FIELDS[field]} />
                 ) 
               }

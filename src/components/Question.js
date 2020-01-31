@@ -7,7 +7,8 @@ class Question extends Component {
   static propTypes = {
     dispatch: PropTypes.func.isRequired,
     field: PropTypes.string.isRequired,
-    question: PropTypes.string.isRequired
+    question: PropTypes.string.isRequired,
+    savedInput: PropTypes.string
   };
 
   constructor(props){
@@ -22,7 +23,7 @@ class Question extends Component {
   }
 
   handleBlur(){
-    if(this.state.input && this.state.input.length > 0)
+    if(this.state.input && this.state.input.length > 0 && this.state.input != this.props.savedInput )
       this.props.dispatch(
         submitField(this.props.field, this.state.input)
       );
