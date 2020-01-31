@@ -34,11 +34,9 @@ class App extends Component {
     switch (this.props.view) {
       case VIEWS.EDIT:
         return (<Edit />)
-        break;
       case VIEWS.QUESTIONNAIRE:
       default: 
         return (<Questionnaire />)
-        break;
     }
   }
 }

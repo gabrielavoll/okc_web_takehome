@@ -1,3 +1,8 @@
+## Notes from Gabriela Voll
+
+Following the instructions under `How to use` will get this thing up and running without any errors or warnings. 
+I didnt add any additional modules to get this going, since the requirements were very simple. But without further to do a very simple implementation for React.js|Redux.js 
+
 # OkCupid Take-Home Exercise
 
 Welcome to the OkCupid take-home exercise! This will roughly model the type of

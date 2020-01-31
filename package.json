@@ -2,6 +2,7 @@
   "name": "takehome",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://gato333.github.io/okc_web_takehome",
   "repository": {
     "type": "git",
     "url": "https://github.com/inlongform/oktakehome"
